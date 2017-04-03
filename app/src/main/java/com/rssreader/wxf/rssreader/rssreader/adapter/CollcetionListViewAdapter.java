@@ -31,7 +31,7 @@ public class CollcetionListViewAdapter extends BaseAdapter {
     private boolean[] state;//
 
     public CollcetionListViewAdapter(Context context, ArrayList<News> newsList) {
-        this.mContext = context;
+            this.mContext = context;
         this.newsList = newsList;
         newsDao = new NewsDao(mContext);
     }

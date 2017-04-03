@@ -3,7 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "25.0.0"
-
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
     defaultConfig {
         applicationId "com.rssreader.wxf.rssreader"
         minSdkVersion 21
@@ -28,4 +32,6 @@ dependencies {
     compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
     compile 'com.google.zxing:android-core:3.3.0'
     compile files('libs/zxing.jar')
+    compile files('libs/jcore-android_v1.1.1.jar')
+    compile files('libs/jpush-android_v3.0.3.jar')
 }
